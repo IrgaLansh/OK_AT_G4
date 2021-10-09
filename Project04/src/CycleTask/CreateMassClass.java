@@ -11,6 +11,7 @@ public class CreateMassClass {
         int[] massiv = new int[7];
         Random random = new Random();
 //растянуть по классам
+//еще один комент
 
         for (int i = 0; i < massiv.length; i++) {massiv[i] = random.nextInt(10);
             System.out.printf(massiv[i] + " ");}
