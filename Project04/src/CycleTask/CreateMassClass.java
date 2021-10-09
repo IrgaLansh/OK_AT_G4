@@ -10,7 +10,7 @@ public class CreateMassClass {
     public void myCreateMassClass() {
         int[] massiv = new int[7];
         Random random = new Random();
-
+//растянуть по классам
 
         for (int i = 0; i < massiv.length; i++) {massiv[i] = random.nextInt(10);
             System.out.printf(massiv[i] + " ");}
