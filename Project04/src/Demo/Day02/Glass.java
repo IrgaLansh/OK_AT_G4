@@ -9,22 +9,15 @@ public class Glass {
 
     public Glass(int fullVolume, String color){
         this.fullVolume = fullVolume;
-        this.color = color;
+        this.color = color;}
 
-    }
-    public int getFullVolume() {return fullVolume; }
-
-    public int getEffectiveVolume() {return effectiveVolume;    }
-
+    public int getFullVolume() {return fullVolume;}
+    public int getEffectiveVolume() {return effectiveVolume;}
     public void setEffectiveVolume(int effectiveVolume) {
         this.effectiveVolume = effectiveVolume;
-        if(effectiveVolume > 0){this.isEmpty=false; }
-    }
-
+        if(effectiveVolume > 0){this.isEmpty=false;}}
     public int getPrice() {return price;}
-
     public String getColor() {return color;}
-
     public boolean isEmpty() {return isEmpty;}
 
     public void fill(int i) {}

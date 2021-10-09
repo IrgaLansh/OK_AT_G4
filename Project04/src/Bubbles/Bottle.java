@@ -1,17 +1,26 @@
 package Bubbles;
 
 public class Bottle {
-    int BottleVol;
-    boolean WaterInside;
-
-    public void open(){}
+    double bottleVolume;
+    boolean waterInside;
 
 
+    public Bottle(double bottleVolume, boolean waterInside){
+        this.bottleVolume = bottleVolume;
+        this.waterInside = waterInside;}
 
-/*
-- создать класс Bottle
-- у него есть обьем
-- есть вода
-- есть метод open(), который вызывает метод degas() в газировке
-*/
+    public double getBottleVolume() {return bottleVolume;}
+    public void setBottleVolume(double bottleVolume) {this.bottleVolume = bottleVolume;}
+    public boolean isWaterInside() {return waterInside;}
+    public void setWaterInside(boolean waterInside) {this.waterInside = waterInside;}
+
+/**/
+
+    public void open(){
+        SparklingWater mySW = new SparklingWater();
+        mySW.degas();
+
+    }
 }
+
+

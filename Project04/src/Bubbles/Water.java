@@ -1,21 +1,21 @@
 package Bubbles;
-/*
-- создать абстрактный класс Water
-- у воды есть такие характеристики, цвет, прозрачность, запах, температура
-*/
+
 abstract public class Water {
     String Color;
     int Density;
     String Smell;
-    int Temprt;
+    int Temperature;
+
 }
 
 class SparklingWater {
-/*
-- создать класс SparklingWater, являющийся дочерним Water
-- у газировки есть пузырьки
-- вода заполняется пузырьками при упаковке на заводе, для этого у нее есть метод pump(Bubble[] bubbles)
-- 1 литр воды содержит 10 тыс пузырьков
-- у газировки есть метод degas(), который удаляет пузырьки по одному и вызывает их лопанье
- */
+    int bubbles = 10000;
+
+    public void pump(Bubble[] bubbles){}
+
+    public void degas(){
+        while (bubbles >0){System.out.println("Cramp!");bubbles--;}
+    }
 }
+/*- 1 литр воды содержит 10 тыс пузырьков
+- у газировки есть метод degas(), который удаляет пузырьки по одному и вызывает их лопанье*/

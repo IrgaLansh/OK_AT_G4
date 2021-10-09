@@ -8,7 +8,7 @@ public class TheClassTwo {
     public void theMethod(){
         TheClass theClass = new TheClass();
         theClass.theMethod();
-        new TheClass()
+        new TheClass();
 
         System.out.println("i am the classtwo");
     }
