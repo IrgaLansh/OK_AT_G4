@@ -4,12 +4,12 @@ public class TrainMethodsObjectsRunner {
 
     public static void main(String[] args) {
 
-        TrainMethodsObjects myTMO = new TrainMethodsObjects();
-        myTMO.processMouse.printMouseDetails();
-        myTMO.processSouce.printSouceDetails();
-        myTMO.processBee.printBeeDetails();
-        myTMO.processObstacle.printObstacleDetails();
-        myTMO.processPineapple.printPineappleDetails();
+        TrainMethodsObjects myTrainMethodsObjects = new TrainMethodsObjects();
+        myTrainMethodsObjects.processMouse.printMouseDetails();
+        myTrainMethodsObjects.processSouce.printSouceDetails();
+        myTrainMethodsObjects.processBee.printBeeDetails();
+        myTrainMethodsObjects.processObstacle.printObstacleDetails();
+        myTrainMethodsObjects.processPineapple.printPineappleDetails();
 
     }
 }

@@ -7,9 +7,16 @@ class TheClass {
 
     //public TheClass(String name, int age){ System.out.println(age+name);}
 
+
     public TheClass(){ System.out.println(age+name);}
 
     public static void main(String[] args) {
+
+
+        // \u000d
+        // System.out.println(a);
+        System.out.println('a');
+        System.out.println(1);
 
         TheClass theClass = new TheClass();
         theClass.theMethod();

@@ -2,17 +2,31 @@ package BaseTask;
 
 public class Souce {
 
-    String name;
-    String color;
+    private String name;
+    private String color;
 
-    public Souce(String Name, String Color){this.color =Color; this.name =Name;}
+    public Souce(String name, String color) {
+        this.color = color;
+        this.name = name;
+    }
 
-    public String getName() {return name;}
-    public void setName(String name) { this.name = name;}
-    public String getColor() {return color;}
-    public void setColor(String color) {this.color = color;}
+    public String getName() {
+        return name;
+    }
 
-    public void printSouceDetails(){
-        System.out.println("This souce " + name +" of "+ color +" color.");
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void printSouceDetails() {
+        System.out.println("This souce " + getName() + " of " + getColor() + " color.");
     }
 }
