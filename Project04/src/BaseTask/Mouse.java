@@ -27,7 +27,7 @@ public class Mouse {
     }
 
     public void printMouseDetails() {
-        System.out.println("Im mouse, my name is " + getName() + " and Im " + getAge() + " years old.");
+        System.out.println("I am a mouse, my name is " + getName() + " and I am " + getAge() + " years old.");
     }
 
 }

@@ -27,6 +27,6 @@ public class Souce {
     }
 
     public void printSouceDetails() {
-        System.out.println("This souce " + getName() + " of " + getColor() + " color.");
+        System.out.println("This is a " + getColor() + " " + getName() + " souce.");
     }
 }

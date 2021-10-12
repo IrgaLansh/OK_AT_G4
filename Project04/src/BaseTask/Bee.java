@@ -27,6 +27,6 @@ public class Bee {
     }
 
     public void printBeeDetails() {
-        System.out.println("Im smaller weights than elk in " + 500 / getWeight() + " times.");
+        System.out.println("I am " + 500 / getWeight() + " times lighter than an elk.");
     }
 }

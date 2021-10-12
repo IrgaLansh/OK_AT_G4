@@ -2,45 +2,56 @@ package BaseTask;
 
 public class TrainMethodsIf {
 
-        private int chyslo =19;
-        private long chyslo2 = 366;
-        private char litera = 'g';
-        private String lLitera;
-        private float drob = (float) 0.67;
-        private double bigDrob = 80;
-        private boolean logic = true;
 
-        public void returnNewInt() {
-            if (chyslo < 8) {
-                chyslo *=7;} else {
-                chyslo /=4;}
-            System.out.println("method returnNewInt returns " + chyslo);
+    private String characterCombo;
+
+    public int returnNewInt(int intNumber) {
+        return intNumber < 8 ? intNumber *= 7 : intNumber /= 4;
+//        System.out.println("method returnNewInt returns " + intNumber);
+    }
+
+    public int returnNewLong(long longNumber) {
+        if (longNumber > 300) {
+            longNumber -= 300;
+        } else {
+            longNumber += 20;
         }
-        public void returnNewLong() {
-            if (chyslo2 > 300) {
-                chyslo2 -=300;} else {
-                chyslo2 +=20;}
-            System.out.println("method returnNewLong returns " + chyslo2);
+        System.out.println("method returnNewLong returns " + longNumber);
+    }
+
+    public int returnNewChar(char character) {
+        if (character == 'g') {
+            characterCombo = character + "o";
+        } else {
+            characterCombo = "o" + character;
         }
-        public void returnNewChar() {
-            if (litera == 'g') {
-                lLitera = litera +"o";} else {
-                lLitera ="o"+ litera;}
-            System.out.println("method returnNewChar returns " + lLitera);
+        System.out.println("method returnNewChar returns " + characterCombo);
+    }
+
+    public int returnNewFloat(float floatNumber) {
+        if (floatNumber != 0.67) {
+            floatNumber *= 2;
         }
-        public void returnNewFloat() {
-            if (drob ==0.67) {} else {drob *=2;}
-            System.out.println("method returnNewFloat returns " + drob);
+        return floatNumber;
+        System.out.println("method returnNewFloat returns " + floatNumber);
+    }
+
+    public int returnNewDouble(double doubleNumber) {
+        if (doubleNumber > 30 & doubleNumber < 80) {
+            doubleNumber += 87;
+        } else {
+            if (doubleNumber > 80 & doubleNumber < 400) {
+                doubleNumber -= 87;
+            } else {
+                if (doubleNumber > 400) {
+                    doubleNumber /= 4;
+                }
+            }
         }
-        public void returnNewDouble() {
-            if (bigDrob >30 & bigDrob <80){
-                bigDrob +=87;} else {
-                if (bigDrob >80 & bigDrob <400){
-                    bigDrob -=87;} else {
-                    if (bigDrob >400){
-                        bigDrob /=4;}}}
-            System.out.println("method returnNewDouble returns " + bigDrob);
-        }
-        public void returnNewBoolean() {
-            System.out.println("I receive " + logic);}
-        }
+        System.out.println("method returnNewDouble returns " + doubleNumber);
+    }
+
+    public int returnNewBoolean(boolean booleanValue) {
+        System.out.println("I receive " + booleanValue);
+    }
+}

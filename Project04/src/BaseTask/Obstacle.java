@@ -27,6 +27,6 @@ public class Obstacle {
     }
 
     public void printObstacleDetails() {
-        System.out.println("There are " + getSeverity() + " issue is " + getDescription() + ".");
+        System.out.println("There a " + getSeverity() + " issue is " + getDescription() + ".");
     }
 }

@@ -27,10 +27,8 @@ public class Pineapple {
     }
 
     public void printPineappleDetails() {
-        if (getHeatCapacity() > 2140) {
-            System.out.println("Im Pineapple which warmer than meat");
-        } else {
-            System.out.println("Meat warmer than me :(");
-        }
+        System.out.println(getHeatCapacity() > 2140 ? "I am a pineapple with a higher heatCapacity than ham" :
+                "More heat is stored in the ham :(");
     }
 }
+
