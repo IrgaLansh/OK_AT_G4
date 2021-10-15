@@ -6,9 +6,12 @@ public class TrainMethodsIf {
     private String characterCombo;
 
     public int returnNewInt(int intNumber) {
-        if (intNumber < 8) {intNumber *= 7;} else{ intNumber /= 4;}
+        if (intNumber < 8) {
+            intNumber *= 7;
+        } else {
+            intNumber /= 4;
+        }
         return intNumber;
-//        System.out.println("method returnNewInt returns " + intNumber);
     }
 
     public long returnNewLong(long longNumber) {
@@ -18,7 +21,6 @@ public class TrainMethodsIf {
             longNumber += 20;
         }
         return longNumber;
-//        System.out.println("method returnNewLong returns " + longNumber);
     }
 
     public String returnNewChar(char character) {
@@ -27,7 +29,6 @@ public class TrainMethodsIf {
         } else {
             characterCombo = "o" + character;
         }
-        System.out.println("method returnNewChar returns " + characterCombo);
         return characterCombo;
     }
 
@@ -36,7 +37,6 @@ public class TrainMethodsIf {
             floatNumber *= 2;
         }
         return floatNumber;
-        //System.out.println("method returnNewFloat returns " + floatNumber);
     }
 
     public double returnNewDouble(double doubleNumber) {
@@ -51,12 +51,10 @@ public class TrainMethodsIf {
                 }
             }
         }
-        System.out.println("method returnNewDouble returns " + doubleNumber);
         return doubleNumber;
     }
 
     public boolean returnNewBoolean(boolean booleanValue) {
-        System.out.println("I receive " + booleanValue);
         return booleanValue;
     }
 }
