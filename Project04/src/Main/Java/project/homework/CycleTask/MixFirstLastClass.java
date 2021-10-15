@@ -11,10 +11,12 @@ public class MixFirstLastClass {
         Random random = new Random();
 
         System.out.println("MixFirstLastClass");
-        for (int i = 0; i < massiv.length; i++) {massiv[i] = random.nextInt(20);}
+        for (int i = 0; i < massiv.length; i++) {
+            massiv[i] = random.nextInt(20);
+        }
         int first = massiv[0];
         massiv[0] = massiv[6];
-        massiv[6]=first;
+        massiv[6] = first;
         String mixedMassiv = Arrays.toString(massiv);
         System.out.println("mixedMassiv " + mixedMassiv);
     }

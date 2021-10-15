@@ -10,9 +10,13 @@ public class MinElementMassivClass {
         Random random = new Random();
 
         System.out.println("MinElementMassivClass");
-        for (int i = 0; i < massiv.length; i++) {massiv[i] = random.nextInt(20);}
+        for (int i = 0; i < massiv.length; i++) {
+            massiv[i] = random.nextInt(20);
+        }
         int ele_min = massiv[0];
-        for (int i = 0; i < massiv.length; i++) {if(massiv[i] < ele_min) ele_min = massiv[i];}
+        for (int i = 0; i < massiv.length; i++) {
+            if (massiv[i] < ele_min) ele_min = massiv[i];
+        }
         System.out.println(ele_min);
     }
 }

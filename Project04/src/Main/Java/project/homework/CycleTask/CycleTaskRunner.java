@@ -5,14 +5,14 @@ public class CycleTaskRunner {
 
         WhileClass myWhC = new WhileClass();
         ForClass myFC = new ForClass();
-        CreateMassivClass myCMC = new CreateMassivClass();
+        createMassive myCMC = new createMassive();
         ElementsMassivClass myEMC = new ElementsMassivClass();
-        BackElementsClass myBEC = new BackElementsClass();
+        ReverseElements myBEC = new ReverseElements();
         UmnozhElementMassivClass myUEMC = new UmnozhElementMassivClass();
         KvadratElementMassivClass myKEMC = new KvadratElementMassivClass();
         MinElementMassivClass myMEMC = new MinElementMassivClass();
         MixFirstLastClass myMFC = new MixFirstLastClass();
-        SortClass mySC = new SortClass();
+        arraySorting mySC = new arraySorting();
 
         myWhC.myWhileClass();
         myFC.myForClass();
