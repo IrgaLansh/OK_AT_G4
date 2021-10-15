@@ -11,28 +11,35 @@ public class TrainMethodsPrimitive {
     private byte bita = 98;
     private boolean logic = true;
 
-    public void printInt(){
+    public void printInt() {
         System.out.println("i received number " + chyslo);
     }
-    public void printLong(){
+
+    public void printLong() {
         System.out.println("i received long number " + chyslo2);
     }
-    public void printChar(){
+
+    public void printChar() {
         System.out.println("i received character " + stroka);
     }
-    public void printFloat(){
+
+    public void printFloat() {
         System.out.println("i received floating " + drob);
     }
-    public void printDouble(){
+
+    public void printDouble() {
         System.out.println("i received double " + bigDrob);
     }
-    public void printShort(){
+
+    public void printShort() {
         System.out.println("i received short " + korotk);
     }
-    public void printByte(){
+
+    public void printByte() {
         System.out.println("i received byte " + bita);
     }
-    public void printBoolean(){
+
+    public void printBoolean() {
         System.out.println("i received logical " + logic);
     }
 }
