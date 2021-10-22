@@ -24,5 +24,4 @@ public class ObjectContainer {
     public boolean isFull() {
         return freePlaceNumber == massive.length - 1;
     }
-
 }

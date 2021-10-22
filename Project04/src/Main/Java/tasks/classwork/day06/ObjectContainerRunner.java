@@ -20,7 +20,6 @@ public class ObjectContainerRunner {
 //            System.out.println(objCon.removeLast());
 //            //System.out.println(objCon.massive[objCon.freePlaceNumber]);        }
 
-
     }
 }
 

@@ -20,8 +20,6 @@ public class JenericContainerRunner {
                 System.out.println("Number " + object + " removed");
             }
         }
-
-
     }
 }
 

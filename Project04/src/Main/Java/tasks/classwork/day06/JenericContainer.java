@@ -19,7 +19,7 @@ class GenericContainer<T> {
         T result = null;
         if (currentPosition > 0) {
             result = container[currentPosition - 1];
-            container[--currentPosition]=null;
+            container[--currentPosition] = null;
         }
         return result;
     }
