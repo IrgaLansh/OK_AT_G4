@@ -21,14 +21,20 @@ public class Birds {
             System.out.println("--" + birds1 + "--");
         }
 
+
+
         //Посчитать сколько птиц содержат больше 1 гласной и вывести в число в консоль
+        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         int counter = 0;
-        for (String bird : birds) {
-            if (bird.contains("и")) {
+        for (String str1 : birds) {
+            if (str1.contains("а")) {
                 counter++;
             }
         }
         System.out.println(counter);
+
+
+
 
         for (int i = 0; i < birds.size(); i++) {
             System.out.print(birds.get(i) + " ");
@@ -37,8 +43,8 @@ public class Birds {
 
         birds.set(3, "Синица");
 
-        for (String bird : birds) {
-            System.out.print(bird + " ");
+        for (String str2 : birds) {
+            System.out.print(str2 + " ");
         }
     }
 }
