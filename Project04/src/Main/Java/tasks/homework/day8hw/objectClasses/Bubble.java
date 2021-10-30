@@ -6,9 +6,35 @@ package tasks.homework.day8hw.objectClasses;
 //Посчитать обьем всех пузырей и вывести число в консоль
 //Проитерировать список по индексу и отпечатать пузыри (.toString()) в консоль с новой строки
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 
 public class Bubble {
+    public static void main(String[] args) {
+
+        List<Bubble> bubbles = new ArrayList<>(Arrays.asList(new Bubble(2, "CO2"), new Bubble(4, "O2"), new Bubble(5, "CO")));
+        int volume = 0;
+
+        for (Bubble bubble : bubbles) {
+            System.out.print(bubble.getVolume() + " ");
+        }
+        System.out.println();
+
+        for (Bubble bubble : bubbles) {
+            System.out.print(bubble.getName() + " ");
+        }
+
+        for (Bubble bubble : bubbles) {
+            volume += bubble.getVolume();
+        }
+        System.out.println("\n"+volume);
+
+        for (int i = 0; i < bubbles.size(); i++) {
+            System.out.println(bubbles.get(i).toString());
+        }
+    }
 
     private int volume;
     private String name;
