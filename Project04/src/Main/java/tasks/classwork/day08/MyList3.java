@@ -7,7 +7,7 @@ import java.util.Set;
 public class MyList3 {
     public static void main(String[] args) {
 
-        Set<String> mySet = new HashSet();
+        Set<String> mySet = new HashSet<>();
         String mama = "мама мыла раму";
 
         for (String strValue : mama.split(" ")) {

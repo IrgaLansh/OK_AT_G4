@@ -14,7 +14,7 @@ public class MyTableRunner {
         ObjectInputStream ois = new ObjectInputStream(fis);
         Table table = (Table) ois.readObject();
         ois.close();
-        System.out.println(table);
+        System.out.println(table.toString());
     }
 }
 

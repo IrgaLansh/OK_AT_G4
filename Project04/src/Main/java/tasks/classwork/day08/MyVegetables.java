@@ -5,7 +5,7 @@ import java.util.List;
 
 public class MyVegetables {
     public static void main(String[] args) {
-        List<String> vegetables = new ArrayList();
+        List<String> vegetables = new ArrayList<>();
 
         vegetables.add("Помидор");
         vegetables.add("Огурец");
@@ -24,7 +24,7 @@ public class MyVegetables {
                 counter++;
             }
         }
-        System.out.println(counter + " буквы а");
+        System.out.println(counter + " букв а");
 
         for (int i = 0; i < vegetables.size(); i++) {
             System.out.print(vegetables.get(i) + " ");

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class MyList7 {
     public static void main(String[] args) {
-        List<String> names = new ArrayList();
+        List<String> names = new ArrayList<>();
 
         names.add("Оля");
         names.add("Коля");
