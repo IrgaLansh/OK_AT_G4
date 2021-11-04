@@ -21,9 +21,9 @@ public class MyList5 {
             System.out.println(str2);
         }
 
-//        for (Map.entry<int,String> entry: words.entrySet()) {
-//            System.out.println(entry);
-//        }
+        for (Map.Entry entry: words.entrySet()) {
+            System.out.println(entry);
+        }
 
     }
 }
