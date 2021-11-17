@@ -1,10 +1,10 @@
 package tasks.homework.day8hw.objectClasses;
 
-/*Создать пустой список людей (класса Person) people
-Заполнить 4 людьми с возрастом (32, 24, 55, 63) и именами (Коля, Оля, Вася, Маша) соответственно
-Проитерировать список через for-each и отпечатать возраст в консоль через пробел
-Проитерировать список через for-each и отпечатать имена в консоль через пробел
-Проитерировать список по индексу и отпечатать людей (.toString()) в консоль с новой строки*/
+//Создать пустой список людей (класса Person) people
+//аполнить 4 людьми с возрастом (32, 24, 55, 63) и именами (Коля, Оля, Вася, Маша) соответственно
+//Проитерировать список через for-each и отпечатать возраст в консоль через пробел
+//Проитерировать список через for-each и отпечатать имена в консоль через пробел
+//Проитерировать список по индексу и отпечатать людей (.toString()) в консоль с новой строки
 
 import java.util.Objects;
 
@@ -20,17 +20,14 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "age=" + age +
-                ", name='" + name + '\'' +
-                '}';
+        return "Person{" + "age=" + age + ", name='" + name + '\'' + '}';
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Person person = (Person) obj;
         return age == person.age && Objects.equals(name, person.name);
     }
 

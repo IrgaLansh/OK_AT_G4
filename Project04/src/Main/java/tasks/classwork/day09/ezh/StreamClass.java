@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Class1 {
+public class StreamClass {
     public static void main(String[] args) {
 
         List<String> list = Arrays.asList("mama", "myla", "ramu", "mama", "chysto");
